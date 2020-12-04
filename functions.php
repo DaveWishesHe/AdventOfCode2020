@@ -1,6 +1,6 @@
 <?php
 
-function getInput()
+function getInput($delimiter = "\n", $filename = 'input.txt')
 {
-    return explode("\n", trim(file_get_contents('input.txt')));
+    return explode($delimiter, trim(file_get_contents($filename)));
 }
